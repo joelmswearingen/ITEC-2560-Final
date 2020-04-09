@@ -1,0 +1,242 @@
+/*
+
+font-family: 'Gloria Hallelujah', ;
+font-family: 'Shadows Into Light Two', ;
+font-family: 'Montserrat', ;
+font-family: 'Ibarra Real Nova', ;
+
+rgb(8, 17, 65)  --  navy
+rgb(251, 124, 120)  --  salmon
+rgb(6, 176, 163)  --  turquoise
+rgb(188, 59, 35)  --  brick
+rgb(237, 225, 115)  --  yellow
+
+*/
+
+/*  GENERAL STYLES - APPLIED TO ALL PAGES FIRST */
+
+body {
+    background: ghostwhite;
+    margin: 0;
+    height: 100%;
+    padding: 0;
+}
+
+
+.content { /* Sticky footer - need to wrap all content minus footer in div element with this class - height is fixed based on current footer content - must be updated when footer content changes*/
+    min-height: calc(100vh - 43px);
+}
+
+p {
+    font-family: 'Montserrat';
+    font-size: medium;
+    text-align: center;
+    padding: 0 50px 20px 50px;
+    margin: 0;
+
+}
+
+h1 {
+    font-family: 'Gloria Hallelujah';
+    text-align: center;
+    color: rgb(8, 17, 65);
+    font-size: xx-large;
+    padding: 20px;
+    margin: 0;
+}
+
+ h1.special-header {
+    font-size: 50px;
+    text-shadow: 0 0 15px rgb(6, 176, 163);
+}
+
+h2 {
+    font-family: 'Shadows Into Light Two';
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(8, 17, 65);
+    font-size: xx-large;
+    padding: 20px;
+    margin: 0;
+}
+
+h2.special-header {
+    text-shadow: 0 0 2px rgb(188, 59, 35);
+}
+
+.header-alt { /* class used to create space between top of page and nav/header */
+    padding-top: 120px;
+}
+
+.main-logo {
+    display: block;
+    height: 125px;
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a:link {
+    text-decoration: none;
+    color: rgb(6, 176, 163);
+}
+
+a:visited {
+    text-decoration: none;
+    color: rgb(188, 59, 35);
+}
+
+/*  NAVIGATION BAR STYLING  */
+
+#header {
+    background-color: rgba(8, 17, 65, 0.8);
+    font-family: 'Shadows Into Light Two';
+    font-size: larger;
+    color: ghostwhite;
+    padding: 15px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(8, 17, 65);
+    border-bottom-width: 3px;
+    text-align: center;
+}
+
+#logo {
+    font-family: 'Gloria Hallelujah';
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: ghostwhite;
+}
+
+.navbar a:hover {
+    color: rgb(251, 124, 120);
+    text-shadow: 0 0 3px rgb(251, 124, 120);
+}
+
+.navbar #logo a {
+    text-shadow: 0 0 7px rgb(251, 124, 120);
+}
+
+.navbar #logo a:hover {
+    color: ghostwhite;
+    text-shadow: 0 0 15px rgb(251, 124, 120);
+}
+
+/* 
+The circle hover has two issues to be worked out - removing for now
+    1. when the li has a space it forces the link onto two lines
+    2. when the circle is fully expanded it overlays the link and you can't click the link through the circle
+
+    .cir-hov {
+    height: 25px;
+    width: 25px;
+    border: none;
+    border-radius: 50%;
+    position: relative;
+}
+.cir-hov:before {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(6, 176, 163, 0.5);
+    content: "";
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    transition: all .2s;
+}
+.cir-hov:hover:before {
+    width: 100%;
+    height: 100%;
+}
+*/
+
+/*  MAIN CONTENT  */
+
+figure {
+    margin: 0;
+}
+
+#first-row {
+    padding-top: 0;
+}
+
+#lead-image {
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%)
+}
+
+.features {
+    background: ghostwhite;
+    font-family: 'Montserrat';
+    color: rgb(8, 17, 65);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.features figure {
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(188, 59, 35);
+    width: 200px;
+}
+
+.features figure p {
+    font-family: 'Ibarra Real Nova';
+    color: rgb(8, 17, 65);
+    text-transform: none;
+    width: 200px;
+    margin: auto;
+    padding: 0;
+}
+
+.features figure img {
+    width: 50px;
+}
+
+.credit {
+    text-align: right;
+    margin-right: 20px;
+    font-family: 'Montserrat';
+    font-size: x-small;
+}
+
+/*  FOOTER STYLING */
+
+#footer {
+    background: ghostwhite;
+    font-family: 'Shadows Into Light Two';
+    color: rgb(8, 17, 65);
+    padding: 10px 20px;
+    width: auto;
+}
+
+
+
+

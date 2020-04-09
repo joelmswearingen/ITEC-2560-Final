@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>The Nerdy Theatre | Stay Connected</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Style Sheet(s) and font guide -->
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Ibarra+Real+Nova|Montserrat|Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/connect.css">
+
+</head> 
+
+<body>
+    <div class="content"> <!-- wraps entire contents of page minus footer to handle sticky footer implementation -->
+        <header class="navbar" id="header"></header> <!-- nav/header content is pulled in with jQuery from navigation_bar.html-->
+        <div class="header-alt"></div> <!-- creates space between page content and nav/header -->
+        <fieldset> <!-- fieldset/legend used to encapsulate submission form -->
+            <legend><img src="../images/TNTLogoMaskBkgrnd.png"></legend>
+            <h1>Stay in the know!</h1>
+            <p>Fill out this short form </br>and stay up-to-date with what we're working on.</p>
+            <form > <!-- form content -->
+                <div><input type="text" id="name" name="name" placeholder="Name"></div>
+                <div><input type="text" id="email" name="email" placeholder="E-mail"></div>                
+                <div><input type="text" id="company" name="company" placeholder="Organization Name"></div>                
+                <div><input type="text" id="title" name="title" placeholder="Title"></div>                
+                <select id="size" name="size">
+                    <option disabled selected value hidden>Approx. Number of Employees</option>
+                    <option>Less than 25></option>
+                    <option>25-49</option>
+                    <option>50-74</option>
+                    <option>75-100</option>                    
+                    <option>More than 100</option>
+                </select>
+                <div><input type="button" id="submit" value="Submit"></div>
+            </form>
+        </fieldset>
+        <p class="alt-p" id="submit-confirm"></p> <!-- placeholder for submission confirmation -->
+    </div>
+
+    <footer id="footer"></footer> <!-- footer content is pulled in with jQuery from footer.html -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../js/index.js"></script>
+
+</body>
+
+</html>

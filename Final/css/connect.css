@@ -1,0 +1,123 @@
+/*
+font-family: 'Gloria Hallelujah', ;
+font-family: 'Shadows Into Light Two', ;
+font-family: 'Montserrat', ;
+font-family: 'Ibarra Real Nova', ;
+
+rgb(8, 17, 65)  --  navy
+rgb(251, 124, 120)  --  salmon
+rgb(6, 176, 163)  --  turquoise
+rgb(188, 59, 35)  --  brick
+rgb(237, 225, 115)  --  yellow
+*/
+
+/* Read second to main.css */ 
+/* Style background/form specific to connect page */
+body {
+    background-image: url(../images/alex-avalos-dnUNjIUCg5c-unsplash.jpg);
+    background-size: cover;
+    background-color: ghostwhite;
+}
+
+.alt-p {
+    font-family: 'Shadows Into Light Two';
+    color: ghostwhite;
+    font-size: x-large;
+    padding: 25px;
+    text-shadow: 0 0 3px rgb(251, 124, 120);
+}
+
+fieldset {
+    width: 400px;
+    font-family: 'Gloria Hallelujah';
+    font-size: x-large;
+    margin: auto;
+    text-align: center;
+    background-image: linear-gradient(ghostwhite, rgba(8, 17, 65, .8));
+    border: none;
+    padding: 15px;
+    box-shadow: 0 10px 5px -5px rgba(251, 124, 120, .5);
+}
+
+legend {
+    padding: 0;
+    height: 144px;
+}
+
+img {
+    width: 250px;
+}
+
+/* Style field inputs */
+input[type=text] {
+    width: 350px;
+    padding: 10px 10px 10px 40px;
+    margin: 10px;
+    border: 1px solid rgb(8, 17, 65);
+    font-family: 'Montserrat';
+    font-size: small;
+    background-color: ghostwhite;
+}
+
+input[id=name] {
+    background-image: url('../images/user.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 8px;
+}
+
+input[id=email] {
+    background-image: url('../images/mail.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 8px;
+}
+
+input[id=company] {
+    background-image: url('../images/company.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 8px;
+}
+
+input[id=title] {
+    background-image: url('../images/medal.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 8px;
+}
+
+input[type=text]:focus {
+    background-color: rgba(6, 176, 163, .4);
+    border: 5px solid rgb(6, 176, 163);
+}
+
+/* Style drop down */
+select {
+    background-color: ghostwhite;
+    border: 1px solid rgb(8, 17, 65);
+    font-family: 'Montserrat';
+    font-size: small;
+    color: rgb(8, 17, 65);
+    width: 400px;
+    height: 36px;
+    margin: 10px;
+}
+
+/* Style submit button */
+input[type=button] {
+    background-color: rgb(8, 17, 65);
+    border: 1px solid ghostwhite;
+    font-family: 'Shadows Into Light Two';
+    font-size: medium;
+    color: ghostwhite;
+    padding: 10px 15px 10px 15px;
+    margin: 10px;
+    cursor: pointer;
+    opacity: .8;
+}
+
+input[type=button]:hover {
+    opacity: 1;
+}
+
